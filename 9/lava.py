@@ -76,13 +76,13 @@ def q2():
 	basin_sizes = []
 	count = 0
 	for low_point in low_points:
-		basin_size = dfs(low_point)
+		basin_size = bfs(low_point)
 		basin_sizes.append(basin_size)
 		count += basin_size
 	basin_sizes.sort()
 	print(basin_sizes[-1] * basin_sizes[-2] * basin_sizes[-3])
 
-def dfs(low_point):
+def bfs(low_point):
 	q = [low_point]
 	size = 0
 	while len(q) != 0:
