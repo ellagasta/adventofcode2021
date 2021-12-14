@@ -76,6 +76,6 @@ def q2():
 	char_count[polymer[-1]] += 1
 
 	print(char_count)
-	maxi, mini = max(char_count.values())/2, min(char_count.values())/2
+	maxi, mini = max(char_count.values())/2, min(char_count.values())/2 # account for double count
 	print(maxi, mini, maxi-mini)
 q2()
